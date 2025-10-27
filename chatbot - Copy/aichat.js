@@ -1,7 +1,7 @@
 
 const { GoogleGenAI } =require("@google/genai")
 
-const ai = new GoogleGenAI({ apiKey:"AIzaSyBrVsdCqiys80yRwf5F532YBKECg_7ZttU"});  //object
+const ai = new GoogleGenAI({ apiKey:key});  //object
 
 
 async function main(msg) {
@@ -35,6 +35,7 @@ catch(err){
 main();
 
 module.exports=main;
+
 
 
 

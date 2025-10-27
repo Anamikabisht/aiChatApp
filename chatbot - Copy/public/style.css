@@ -1,0 +1,127 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 28vw;
+  min-width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+.chat-window {
+  width: 100%;
+  height: 50vh;
+  background-color: #ffe3ec;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+/* User message */
+.user {
+  align-self: flex-end; /* push to right */
+  background: #000;
+  color: #fff;
+  border-radius: 12px 12px 0 12px; /* rounded bubble */
+  padding: 10px 14px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+/* AI message */
+.ai {
+  align-self: flex-start; /* stays left */
+  background: #f5f5f5;
+  border-radius: 12px 12px 12px 0;
+  padding: 10px 14px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+/* Wrapper for each message (aligns content left or right) */
+.message-row {
+  display: flex;
+  width: 100%;
+}
+
+/* AI messages: align left */
+.message-row.ai {
+  justify-content: flex-start;
+}
+
+/* User messages: align right */
+.message-row.user {
+  justify-content: flex-end;
+}
+
+/* Common message style */
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* AI bubble */
+.message.ai {
+  background: #f5f5f5;
+  border-top-left-radius: 0;
+}
+
+/* User bubble */
+.message.user {
+  background: #000000;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+}
+
+#msg {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  background: #ff00d0;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #555;
+}

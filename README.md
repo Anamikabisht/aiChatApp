@@ -16,7 +16,7 @@ This app allows users to have natural conversations with an AI assistant that ca
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express
 - **APIs:** Weather API (for real-time weather info)
-- **AI Model:** Custom logic using OpenAI/Hugging Face (if applicable)
+- **AI Model:** Custom logic using gemini
 
 ## How It Works
 
